@@ -32,6 +32,10 @@ fi
 
 screen -wipe >/dev/null || true
 
+# Kill any miner processes outside screen
+echo "Killing stray miner processes…"
+pkill miner || true
+
 # ==============================
 # Start gpuminer in screen
 # ==============================
