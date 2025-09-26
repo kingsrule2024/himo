@@ -14,7 +14,7 @@ echo "🎮 GPU worker name: $WORKERNAME"
 APP="/root/miner"   # full path to miner binary
 # Append workername to wallet
 WALLET="2AAuP5DVbC181stN2tejCp8RCjxXHkD"
-ARGS="--diff 26 --region eu --worker $(hostname)"
+ARGS="--wallet $WALLET --diff 26 --region eu --worker $(hostname)"
 CHECK_INTERVAL=10                # seconds between checks
 LOGFILE="/root/miner_watchdog.log"
 
